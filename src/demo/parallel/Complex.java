@@ -70,7 +70,19 @@ public class Complex {
         im += b.im;
         return this;
     }
+    public Complex minus(Complex number) {
+        this.re -= number.re;
+        this.im -= number.im;
+        return this;
+    }
 
+    public double getRe() {
+        return re;
+    }
+
+    public double getIm() {
+        return im;
+    }
     /**
      * Multiply operation.
      * @param  b multiplier

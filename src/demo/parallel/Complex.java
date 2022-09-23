@@ -70,9 +70,16 @@ public class Complex {
         im += b.im;
         return this;
     }
+
     public Complex minus(Complex number) {
         this.re -= number.re;
         this.im -= number.im;
+        return this;
+    }
+
+    public Complex multiple(Complex number) {
+        this.re = this.re * number.re - this.im* number.im;
+        this.im = this.re * number.im + this.im * number.re;
         return this;
     }
 
